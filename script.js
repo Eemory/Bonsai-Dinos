@@ -16,6 +16,7 @@ const startScreenElem = document.querySelector('[data-start-screen')
 setPixelToWorldScale()
 window.addEventListener('resize', setPixelToWorldScale)
 document.addEventListener('keydown', handleStart, { once: true })       //starts the game
+document.addEventListener('touchstart', handleStart, { once: true })       //starts the game
 
 
 function update(time) {     //creates game loop
